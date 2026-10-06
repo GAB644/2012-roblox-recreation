@@ -1,0 +1,433 @@
+body {
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+button {
+    border: 1px solid #ccc;
+    background-color: #B6CCE4;
+    color: #435D77;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6884a7;
+    color: #fff;
+}
+
+
+.content {
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.content > * {
+    flex: 0 0 auto;
+}
+
+.content-divider {
+    width: 900px;
+    margin: 0 auto;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.play-button {
+    background-color: transparent;
+    width: 215px;
+    height: 214px;
+    padding: 0;
+    border: 0;
+    background: url("images/Buttons/btn-playnow_big2.png") 0 0 no-repeat;
+    background-size: 215px 428px;
+    cursor: pointer;
+}
+
+.play-button:hover,
+.play-button:focus-visible {
+    background-color: transparent;
+    background-position: 0 -214px;
+}
+
+.play-button:focus-visible {
+    outline: 2px solid rgb(36, 65, 128);
+    outline-offset: 2px;
+}
+
+.playgamesrightnow {
+    width: 578px;
+    height: 87px;
+    padding: 0;
+    border: 0;
+    background: url("images/Buttons/playnow.jpg") 0 0 no-repeat;
+    background-size: 540px 174px;
+    cursor: pointer;
+}
+
+.playgamesrightnow:hover,
+.playgamesrightnow:focus-visible {
+    background-color: transparent;
+    background-position: 0 -87px;
+}
+
+.main-layout {
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+
+.left-column {
+    width: 540px;
+    flex-shrink: 0;
+}
+
+.right-column {
+    width: 310px;
+    flex-shrink: 0;
+}
+
+.banner-container {
+    margin-bottom: 15px;
+}
+
+
+.featured-game-container {
+    width: 540px;
+    background-color: #ffffff;
+    padding: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.featured-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333333;
+    margin: 0 0 2px 0;
+    padding: 0;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.featured-subtitle {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.featured-subtitle .by-author {
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: none;
+    color: #555555;
+}
+
+.featured-subtitle a {
+    color: #3160b4;
+    
+}
+
+.featured-game-body {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.game-thumbnail {
+    width: 418px;
+    height: 250px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.game-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.game-sidebar {
+    width: 110px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.play-this-btn {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.play-this-btn img {
+    display: block;
+}
+
+.game-stats {
+    width: 100%;
+    font-size: 11px;
+    color: #000000;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.stat-label {
+    display: block;
+    color: #555555;
+    font-size: 9px;
+    margin-top: 4px;
+}
+
+.stat-value {
+    display: block;
+    font-weight: bold;
+    color: #000000;
+}
+
+.news-box {
+    margin-top: 20px;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.news-box h3 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+}
+
+.news-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news-box li {
+    font-size: 12px;
+    margin-bottom: 6px;
+    line-height: 1.3;
+    position: relative;
+    /* padding-left: 10px; */
+}
+
+/*.news-box li::before {
+    content: "o";
+    font-size: 8px;
+    position: absolute;
+    left: 0;
+    top: -1px;
+    color: #333;
+} */
+
+.news-box a {
+    color: #3160b4 !important;
+}
+
+.see-more {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+.default-header,
+header.header {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    position: static;
+    z-index: 1;
+    background-color: rgb(36, 65, 128);
+}
+
+.header-container {
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header-top {
+    position: static;
+    width: 100%;
+    height: 38px;
+    background-color: rgb(36, 65, 128);
+    overflow: hidden;
+}
+
+.brand {
+    display: block;
+    width: 123px;
+    height: 38px;
+    margin-left: 0;
+    background: url("images/btn-logo.png") 0 0 no-repeat;
+}
+
+.brand:hover,
+.brand:focus {
+    background-position: 0 -38px;
+}
+
+nav.header2 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: static;
+    display: block;
+    height: 27px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-top: 1px solid #a7c3e6;
+    border-bottom: 1px solid #1c283a;
+    background-color: #5485cc;
+    background-image: linear-gradient(179deg, #5485cc 0%, #3b5e91 100%);
+}
+
+nav.header2 ul {
+    display: flex;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    white-space: nowrap;
+}
+
+nav.header2 li {
+    display: inline-block;
+    height: 100%;
+}
+
+nav.header2 a {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 14px;
+    border-top: 1px solid transparent;
+    color: #fff ;
+    font-size: 17px;
+    font-weight: 700;
+    
+}
+
+nav.header2 li:first-child a {
+    padding-left: 0;
+}
+
+nav.header2 a:hover,
+nav.header2 a:focus {
+    text-decoration: none;
+    border-top-color: #cbe4f5;
+    background: linear-gradient(179deg, rgba(97, 171, 219, 1) 0%, rgba(79, 130, 194, 1) 100%);
+}
+
+.header3 {
+    background-color: #363636;
+}
+
+nav.header3 {
+    display: block;
+    height: 29px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+nav.header3 ul {
+    display: block;
+    height: 100%;
+    padding: 0 0 0 25px;
+    margin: 0;
+    list-style: none;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+nav.header3 li {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    font-size: 17px;
+}
+
+nav.header3 a {
+    display: inline-block;
+    height: 27px;
+    line-height: 25px;
+    margin-top: 0;
+    padding: 0 7px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    color: #f2f2f2 ;
+    font-size: 14px;
+    
+}
+
+nav.header3 a:hover,
+nav.header3 a:focus {
+    text-decoration: none;
+    border-top-color: #cccccc;
+    border-bottom-color: #1b1b1b;
+    background: linear-gradient(179deg, rgba(151, 151, 151, 1) 0%, rgba(79, 79, 79, 1) 100%);
+}
+
+
+.header-frame {
+    display: block;
+    width: 100%;
+    height: 67px;
+    border: 0;
+}
+
+.footer-frame {
+    display: block;
+    height: 200px;
+    width: 100%;
+    border: 0;
+}
+
+
+@media (max-width: 760px) {
+    nav.header2 a {
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 11px;
+    }
+
+    nav.header2 li:first-child a {
+        padding-left: 10px;
+    }
+
+    nav.header3 ul {
+        padding-left: 10px;
+    }
+
+    nav.header3 a {
+        padding-right: 3px;
+        padding-left: 3px;
+        font-size: 11px;
+    }
+}
