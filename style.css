@@ -47,10 +47,14 @@ button:hover {
     border-top: 1px solid #ccc;
 }
 
-.play-button {
+.StandardBoxGray {
+    background-image: url("images/UI/standardBox_01_bkg.png");
+}
+
+.VisitButtonPlay {
     background-color: transparent;
-    width: 215px;
-    height: 214px;
+    width: 215px !important;
+    height: 214px !important;
     padding: 0;
     border: 0;
     background: url("images/Buttons/btn-playnow_big2.png") 0 0 no-repeat;
@@ -58,13 +62,13 @@ button:hover {
     cursor: pointer;
 }
 
-.play-button:hover,
-.play-button:focus-visible {
+.VisitButtonPlay:hover,
+.VisitButtonPlay:focus-visible {
     background-color: transparent;
     background-position: 0 -214px;
 }
 
-.play-button:focus-visible {
+.VisitButtonPlay:focus-visible {
     outline: 2px solid rgb(36, 65, 128);
     outline-offset: 2px;
 }
@@ -83,6 +87,25 @@ button:hover {
 .playgamesrightnow:focus-visible {
     background-color: transparent;
     background-position: 0 -87px;
+}
+
+.BlueRightArrow {
+    width: 36px !important;
+    height: 36px !important;
+    background-image: url('images/arrow_36px_right.png');
+}
+.BlueRightArrow:hover {
+    cursor: pointer;
+    background-image: url('images/arrow36px_rightOn.png');
+}
+.BlueLeftArrow {
+    width: 36px !important;
+    height: 36px !important;
+    background-image: url('images/arrow_36px_left.png');
+}
+.BlueLeftArrow:hover {
+    cursor: pointer;
+    background-image: url('images/arrow36px_leftOn.png');
 }
 
 .main-layout {
@@ -105,7 +128,6 @@ button:hover {
 .banner-container {
     margin-bottom: 15px;
 }
-
 
 .featured-game-container {
     width: 540px;
