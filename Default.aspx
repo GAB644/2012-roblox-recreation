@@ -15,7 +15,7 @@
 
 <div class="content">
     <img style="image-rendering: crisp-edges;" alt="Member Login, Username, Password, Sign in with Facebook, not a member? Sign Up" src="login.png">
-    <!-- <iframe width="380" height="250" src="https://penny-indexed-burton-jungle.trycloudflare.com/videos/page/embed.html?v=1791310542034-292243567.mp4" frameborder="0" allowfullscreen></iframe> -->
+    <!-- <iframe width="380" height="250" src="https://penny-indexed-burton-jungle.trycloudflare.com/videos/page/embed.aspx?v=1791310542034-292243567.mp4" frameborder="0" allowfullscreen></iframe> -->
     <iframe width="380" height="250" src="https://www.youtube.com/embed/Tp7N0B7bgqI?si=O595EztWMVkug3gh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <a><button class="VisitButtonPlay" type="button"></button></a>
 </div>

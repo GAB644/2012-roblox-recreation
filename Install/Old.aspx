@@ -37,7 +37,7 @@
             If you have already installed the new version, then click it from your Start menu</p>
         <p style="font-size: larger">
             If you have not installed the new version then
-            <a id="ctl00_cphRoblox_HyperLink1" href="/Default.html">click 
+            <a id="ctl00_cphRoblox_HyperLink1" href="/Default.aspx">click 
             here</a>. (Be careful not to use shortcuts to the old Roblox)</p>
         <p>
             <img id="ctl00_cphRoblox_iRobloxViaStartMenu" src="/images/RobloxViaStartMenu.png" alt="ROBLOX via START menu" border="0"/></p>
