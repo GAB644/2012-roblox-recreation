@@ -1,5 +1,1 @@
-<%@ Page Language="C#" %>
-<%
-    Response.Redirect("Start.html", false);
-    Context.ApplicationInstance.CompleteRequest();
-%>
+<meta http-equiv='refresh' content='0; URL=/Install/Old.html'>
